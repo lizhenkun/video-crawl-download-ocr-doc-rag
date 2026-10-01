@@ -1,5 +1,6 @@
 # 项目
-名称: video_crawl_download_ocr_doc_rag 爬虫 - 影音截图 - OCR识别文字 - 模型总结文章
+名称: video_crawl_download_ocr_doc_rag 
+视频爬虫 - 下载 - 转文字 - 转正式书面文 - RAG
 
 # 安装
 ```shell
@@ -16,7 +17,3 @@ uv sync
 # 退出虚拟Python环境
 deactivate
 ```
-
-# windows grep
-windows powershell 实现 以下Linux 命令： python list | grep drission
-pip list | Select-String "drission"

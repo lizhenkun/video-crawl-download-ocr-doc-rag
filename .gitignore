@@ -19,6 +19,9 @@ output/
 
 bak/
 
+# Git 占位文件
+.gitkeep
+
 # 含密钥的本地配置（使用时从同名 .example 复制）
 video_crawl_download_ocr_doc_rag/config/config.toml
 video_crawl_download_ocr_doc_rag/app/skills/bilibili_crawler/config/config.toml
