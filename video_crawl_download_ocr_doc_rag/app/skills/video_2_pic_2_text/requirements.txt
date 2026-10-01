@@ -1,0 +1,8 @@
+# 视频处理与OCR依赖
+moviepy>=2.2.1
+openpyxl>=3.1.0
+scipy>=1.17.1
+opencv-python>=4.13.0.92
+opencv-contrib-python>=4.10.0.84
+paddlepaddle==3.2.0
+paddleocr[all]>=3.4.0

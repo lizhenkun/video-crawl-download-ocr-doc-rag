@@ -1,0 +1,205 @@
+[BILIBILI_UP_INFO]
+
+[BILIBILI_UP_INFO.290663424]
+uploader = "有何高见9527"
+pn_count = 1 # 抓多少页 , 默认: 1, 特殊: -1 抓全部
+# special_types = ["", "charging"] # 普通, 充电tag
+special_types = [""] # 普通, 充电tag
+video_2_txt = true
+skip_line_pattern = "有何高.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.290663424.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+# # [BILIBILI_UP_INFO.520097839]
+# # uploader = "发烧好了呢"
+# # skip_line_pattern = "发烧好了呢.*|ilibili|biibili|bilibil|bilbili"
+# # interval = 0.5
+# # [BILIBILI_UP_INFO.520097839.cropped_kwargs]
+# # y1 = -200
+# # y2 = -30
+
+# # [BILIBILI_UP_INFO.701978895]
+# # uploader = "俞秦语理"
+# # skip_line_pattern = "俞秦语理.*|ilibili|biibili|bilibil|bilbili"
+# # interval = 0.5
+# # [BILIBILI_UP_INFO.701978895.cropped_kwargs]
+# # y1 = -200
+# # y2 = -30
+
+# # [BILIBILI_UP_INFO.355327690]
+# # uploader = "珍大户"
+# # skip_line_pattern = "珍大户.*|ilibili|biibili|bilibil|bilbili"
+# # interval = 0.5
+# # [BILIBILI_UP_INFO.355327690.cropped_kwargs]
+# # y1 = -200
+# # y2 = -30
+
+# [BILIBILI_UP_INFO.508171633]
+# uploader = "思考的熊兄"
+# skip_line_pattern = "思考的熊兄.*|ilibili|biibili|bilibil|bilbili"
+# interval = 0.5
+# [BILIBILI_UP_INFO.508171633.cropped_kwargs]
+# y1 = -200
+# y2 = -30
+
+# [BILIBILI_UP_INFO.2233213]
+# uploader = "星话大白"
+# skip_line_pattern = "星话大白.*|ilibili|biibili|bilibil|bilbili"
+# interval = 0.5
+# [BILIBILI_UP_INFO.2233213.cropped_kwargs]
+# y1 = -200
+# y2 = -30
+
+# [BILIBILI_UP_INFO.1575688490]
+# uploader = "CLS同学"
+# skip_line_pattern = "CLS同学.*|ilibili|biibili|bilibil|bilbili"
+# interval = 0.5
+# [BILIBILI_UP_INFO.1575688490.cropped_kwargs]
+# y1 = -200
+# y2 = -30
+
+[BILIBILI_UP_INFO.290085222]
+uploader = "金融民工数据分析"
+skip_line_pattern = "金融民工数据分析.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.290085222.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+# 注释掉的配置项
+# [BILIBILI_UP_INFO.322005137]
+# uploader = "史诗级韭菜"
+# skip_line_pattern = "史诗级韭菜.*|ilibili|biibili|bilibil|bilbili"
+# interval = 0.5
+# y1 = -300
+# y2 = -55
+
+# 注释掉的配置项
+# [BILIBILI_UP_INFO.3546587043203707]
+# uploader = "CLS班长" # 不再更新
+# skip_line_pattern = "CLS班长.*|ilibili|biibili|bilibil|bilbili"
+# interval = 0.5
+# y1 = -300
+# y2 = -55
+
+# Global LLM configuration
+[llm]
+base_url = "https://qianfan.baidubce.com/v2"  # API endpoint URL for vision model
+api_key = "bce-v3/ALTAK-YOUR_BAIDU_API_KEY/YOUR_SECRET"                    # Your API key for vision model
+max_tokens = 8192                           # Maximum number of tokens in the response
+temperature = 0.1                           # Controls randomness for vision model
+model = "deepseek-v3.1-250821"
+# model = "qwen3-235b-a22b-instruct-2507"
+# model = "qwen3-vl-235b-a22b-thinking"
+# model = "deepseek-v3.2-think"
+# model = "deepseek-v3"
+# model = "kimi-k2-instruct"
+
+[llm.ernine5]
+base_url = "https://qianfan.baidubce.com/v2"  # API endpoint URL for vision model
+api_key = "bce-v3/ALTAK-YOUR_BAIDU_API_KEY/YOUR_SECRET"                    # Your API key for vision model
+max_tokens = 8192                           # Maximum number of tokens in the response
+temperature = 0.1                           # Controls randomness for vision model
+model = "ernie-5.0-thinking-latest"
+
+# model = "qwen3-235b-a22b-instruct-2507"
+# model = "qwen3-vl-235b-a22b-thinking"
+# model = "deepseek-v3.2-think"
+# model = "deepseek-v3"
+# model = "kimi-k2-instruct"
+
+# model = "qwen-max-2025-01-25"        # The LLM model to use
+# base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"  # API endpoint URL
+# api_key = "sk-your-dashscope-api-key"                    # Your API key
+# max_tokens = 8192                           # Maximum number of tokens in the response
+# temperature = 0.1                           # Controls randomness
+
+# [llm] # Amazon Bedrock
+# api_type = "aws"                                       # Required
+# model = "us.anthropic.claude-3-7-sonnet-20250219-v1:0" # Bedrock supported modelID
+# base_url = "bedrock-runtime.us-west-2.amazonaws.com"   # Not used now
+# max_tokens = 8192
+# temperature = 1.0
+# api_key = "bear"                                       # Required but not used for Bedrock
+
+# [llm] #AZURE OPENAI:
+# api_type= 'azure'
+# model = "YOUR_MODEL_NAME" #"gpt-4o-mini"
+# base_url = "{YOUR_AZURE_ENDPOINT.rstrip('/')}/openai/deployments/{AZURE_DEPOLYMENT_ID}"
+# api_key = "AZURE API KEY"
+# max_tokens = 8096
+# temperature = 0.0
+# api_version="AZURE API VERSION" #"2024-08-01-preview"
+
+# [llm] #OLLAMA:
+# api_type = 'ollama'
+# model = "llama3.2"
+# base_url = "http://localhost:11434/v1"
+# api_key = "ollama"
+# max_tokens = 4096
+# temperature = 0.0
+
+# Optional configuration for specific LLM models
+# [llm.vision]
+# model = "claude-3-7-sonnet-20250219"        # The vision model to use
+# base_url = "https://api.anthropic.com/v1/"  # API endpoint URL for vision model
+# api_key = "YOUR_API_KEY"                    # Your API key for vision model
+# max_tokens = 8192                           # Maximum number of tokens in the response
+# temperature = 0.0                           # Controls randomness for vision model
+
+# [llm.vision] #OLLAMA VISION:
+# api_type = 'ollama'
+# model = "llama3.2-vision"
+# base_url = "http://localhost:11434/v1"
+# api_key = "ollama"
+# max_tokens = 4096
+# temperature = 0.0
+
+# Optional configuration for specific browser configuration
+# [browser]
+# Whether to run browser in headless mode (default: false)
+#headless = false
+# Disable browser security features (default: true)
+#disable_security = true
+# Extra arguments to pass to the browser
+#extra_chromium_args = []
+# Path to a Chrome instance to use to connect to your normal browser
+# e.g. '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+#chrome_instance_path = ""
+# Connect to a browser instance via WebSocket
+#wss_url = ""
+# Connect to a browser instance via CDP
+#cdp_url = ""
+
+# Optional configuration, Proxy settings for the browser
+# [browser.proxy]
+# server = "http://proxy-server:port"
+# username = "proxy-username"
+# password = "proxy-password"
+
+# Optional configuration, Search settings.
+# [search]
+# Search engine for agent to use. Default is "Google", can be set to "Baidu" or "DuckDuckGo".
+#engine = "Google"
+# Fallback engine order. Default is ["DuckDuckGo", "Baidu"] - will try in this order after primary engine fails.
+#fallback_engines = ["DuckDuckGo", "Baidu"]
+# Seconds to wait before retrying all engines again when they all fail due to rate limits. Default is 60.
+#retry_delay = 60
+# Maximum number of times to retry all engines when all fail. Default is 3.
+#max_retries = 3
+
+
+## Sandbox configuration
+#[sandbox]
+#use_sandbox = false
+#image = "python:3.12-slim"
+#work_dir = "/workspace"
+#memory_limit = "1g"  # 512m
+#cpu_limit = 2.0
+#timeout = 300
+#network_enabled = true
+
+[mcp]
+server_reference = "app.mcp.server" # default server module reference

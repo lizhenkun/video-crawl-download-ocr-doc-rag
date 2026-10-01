@@ -1,0 +1,89 @@
+# B站爬虫配置
+# 可在此处配置B站Cookie，用于获取更多视频资源
+[sys]
+# 日志
+log_level = "INFO"
+output_root = "D:\\workspace\\video-crawl-download-ocr-doc-rag\\output"
+
+[brower]
+auto_port = false # true: 每次开新窗口
+port = 9222
+# C:\Program Files\Google\Chrome\Application\chrome.exe
+brower_path = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+headless = false
+# 无痕模式
+incognito = false
+
+[headers]
+User-Agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+Referer = "https://www.bilibili.com/"
+Cookie = "" # 从浏览器 F12 复制 bilibili.com 的 Cookie 填入本地 config.toml，切勿提交真实 Cookie
+
+
+[BILIBILI_UP_INFO.290663424]
+uploader = "有何高见9527"
+pn_count = 1 # 抓多少页 , 默认: 1, 特殊: -1 抓全部
+# special_types = ["", "charging"] # 普通, 充电tag
+special_types = [""] # 普通, 充电tag
+video_2_txt = true
+skip_line_pattern = "有何高.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.290663424.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.520097839]
+uploader = "发烧好了呢"
+skip_line_pattern = "发烧好了呢.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.520097839.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.701978895]
+uploader = "俞秦语理"
+skip_line_pattern = "俞秦语理.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.701978895.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.355327690]
+uploader = "珍大户"
+skip_line_pattern = "珍大户.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.355327690.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.508171633]
+uploader = "思考的熊兄"
+skip_line_pattern = "思考的熊兄.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.508171633.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.2233213]
+uploader = "星话大白"
+skip_line_pattern = "星话大白.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.2233213.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.1575688490]
+uploader = "CLS同学"
+skip_line_pattern = "CLS同学.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.1575688490.cropped_kwargs]
+y1 = -200
+y2 = -30
+
+[BILIBILI_UP_INFO.290085222]
+uploader = "金融民工数据分析"
+skip_line_pattern = "金融民工数据分析.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+[BILIBILI_UP_INFO.290085222.cropped_kwargs]
+y1 = -200
+y2 = -30

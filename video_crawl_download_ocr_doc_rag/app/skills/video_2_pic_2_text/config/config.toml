@@ -1,0 +1,86 @@
+# 视频转图片OCR配置
+
+[sys]
+# 日志级别
+log_level = "INFO"
+# Up主EXCEL的目录
+excel_root = "D:\\workspace\\video-crawl-download-ocr-doc-rag\\output"
+
+[ocr]
+# PaddleOCR模型版本
+model_version = "PP-OCRv4"
+# 使用的设备
+device = "cpu"
+
+
+[BILIBILI_UP_INFO.default]
+uploader = "default"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+# OCR识别置信度阈值
+probability_threshold = 0.93
+
+
+[BILIBILI_UP_INFO.290663424]
+uploader = "有何高见9527"
+pn_count = 1 # 抓多少页 , 默认: 1, 特殊: -1 抓全部
+# special_types = ["", "charging"] # 普通, 充电tag
+special_types = [""] # 普通, 充电tag
+video_2_txt = true
+skip_line_pattern = "有何高.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+# OCR识别置信度阈值
+probability_threshold = 0.93
+
+[BILIBILI_UP_INFO.520097839]
+uploader = "发烧好了呢"
+skip_line_pattern = "发烧好了呢.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+
+[BILIBILI_UP_INFO.701978895]
+uploader = "俞秦语理"
+skip_line_pattern = "俞秦语理.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+
+[BILIBILI_UP_INFO.355327690]
+uploader = "珍大户"
+skip_line_pattern = "珍大户.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+
+[BILIBILI_UP_INFO.508171633]
+uploader = "思考的熊兄"
+skip_line_pattern = "思考的熊兄.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+
+[BILIBILI_UP_INFO.2233213]
+uploader = "星话大白"
+skip_line_pattern = "星话大白.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+
+[BILIBILI_UP_INFO.1575688490]
+uploader = "CLS同学"
+skip_line_pattern = "CLS同学.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+
+[BILIBILI_UP_INFO.290085222]
+uploader = "金融民工数据分析"
+skip_line_pattern = "金融民工数据分析.*|ilibili|biibili|bilibil|bilbili"
+interval = 0.5
+crop_y1 = -160
+crop_y2 = -60
+

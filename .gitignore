@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+*.bak
+*.log
+
+# Virtual environments
+.venv
+.claude/settings.local.json
+.tmp/
+
+# 输出目录  
+output/
+
+bak/
+
+# 含密钥的本地配置（使用时从同名 .example 复制）
+video_crawl_download_ocr_doc_rag/config/config.toml
+video_crawl_download_ocr_doc_rag/app/skills/bilibili_crawler/config/config.toml
+
+config.toml

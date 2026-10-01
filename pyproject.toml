@@ -1,0 +1,54 @@
+[project]
+name = "videocrawlocrsummary"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    # 爬虫网络工具
+    "drissionpage>=4.1.1.2",
+    "requests>=2.32.0",
+    # 日志
+    "loguru>=0.7.3",
+    # 数据与 excel（openpyxl 是 pandas 读写 xlsx 的引擎）
+    "pandas>=2.2.3",
+    "openpyxl>=3.1.5",
+    "pydantic>=2.12.5",
+    # 视频处理
+    "moviepy>=2.2.1",
+    # OCR（paddleocr 运行时依赖 cv2/scipy）
+    "scipy>=1.17.1",
+    "opencv-python>=4.13.0.92",
+    "opencv-contrib-python>=4.10.0.84",
+    "paddlepaddle==3.2.0",
+    "paddleocr[all]==3.4.0",
+    # "Pillow==12.0.0",
+    # "paddlex==3.4.2",
+]
+
+[tool.uv]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+
+# [[tool.poetry.source]]
+# name = "tsinghua"
+# url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+# priority = "primary"
+
+# # [[tool.poetry.source]]
+# # name = "baidu"
+# # url = "https://pip.baidu-int.com/simple/"
+# # priority = "supplemental"
+
+
+# [[tool.uv.index]]
+# name = "tsinghua"
+# url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+# priority = "primary"
+
+
+# # [[tool.uv.index]]
+# # name = "baidu"
+# # url = "https://pip.baidu-int.com/simple/"
+# # priority = "supplemental"
+
