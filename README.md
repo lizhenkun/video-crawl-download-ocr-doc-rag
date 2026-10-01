@@ -1,6 +1,6 @@
 # 项目
-名称: video_crawl_download_ocr_doc_rag 
-视频爬虫 - 下载 - 转文字 - 转正式书面文 - RAG
+名称: video_crawl_download_ocr_doc_rag  
+视频爬虫 - 下载 - 转文字 - 转正式书面文 - RAG  
 
 # 安装
 ```shell
